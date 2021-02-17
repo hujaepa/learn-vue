@@ -7,11 +7,11 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body>
-    <div id="get-age">
-        age: {{getAge()}} <br>
-        {{website}}
+    <div id="app">
+        <input type="text" v-model="name">
+        <span id="test">lalala</span>
+        <button @click="displayName">show name</button>
     </div>
-
     <script src="index.js"></script>
 </body>
 </html>

@@ -1,7 +1,8 @@
 new Vue({
     el:"#get-age",//better name a specific widget
     data:{
-        DOB:1991
+        DOB:1991,
+        website:"https://github.com/hujaepa/learn-vue"
     },
     methods:{
         getAge:function(){
