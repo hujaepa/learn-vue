@@ -2,13 +2,15 @@ new Vue({
     el:"#app",//better name a specific widget
     data:{
         link:"https://github.com/hujaepa/learn-vue",
-        name:""
+        name:"",
+        info:true
     },
     methods:{
         addName: function() {
             let nameList = document.querySelector(".name-list");
             let createLi = document.createElement('li');
-            createLi.innerHTML = "<b>"+this.name+"</b>";
+            createLi.setAttribute("class","info");
+            createLi.innerHTML = this.name;
             nameList.append(createLi);
         }
     }
