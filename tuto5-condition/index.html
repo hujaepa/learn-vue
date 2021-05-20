@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div id="app">
+        <form action="">
+            Budget Type : <br/>
+            Asset <input type="radio" name="type" value="asset" v-on:click="showAsset"> Service <input type="radio" name="type" value="Service" v-on:click="showService">
+            <div v-if="asset">New Asset</div>
+            <div v-if="service">New Service</div>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
